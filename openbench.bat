@@ -9,9 +9,6 @@ set REPO="%5"
 REM Install dependencies via chocolatey
 choco install make winlibs rust golang -y
 
-REM Refresh environtment variables
-@RefreshEnv.cmd
-
 REM Clone client and install dependencies
 git clone "%REPO"
 cd OpenBench\Client
