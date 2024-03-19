@@ -12,11 +12,14 @@ echo Threads used : %THREADS%
 echo Target server: "%SERVER%"
 echo Target repo  : "%REPO%"
 
+REM Wait for 1 second
+timeout /t 1 /nobreak > nul
+
 REM Install dependencies via chocolatey
 choco install make winlibs rust golang -y
 
 REM Refresh environment variables
-call refreshenv >nul
+call refreshenv > nul
 
 REM Clone client and install dependencies
 git clone "%REPO%"

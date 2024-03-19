@@ -12,6 +12,9 @@ echo Threads used : $THREADS
 echo Target server: \"$SERVER\"
 echo Target repo  : \"$REPO\"
 
+# Wait for 1 second
+sleep 1
+
 # Update and install dependencies
 sudo apt update -y && sudo apt upgrade -y
 sudo apt-get install build-essential clang golang-go make cmake gcc g++ -y
