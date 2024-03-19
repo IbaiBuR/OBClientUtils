@@ -22,3 +22,7 @@ For example, to run it on Windows for the [main instance](http://chess.grantnet.
 ```cmd
 .\openbench.bat 4 http://chess.grantnet.us/ <username> <password> https://github.com/AndyGrant/OpenBench.git
 ```
+
+# Disclaimer
+
+Of course, you shouldn't launch the scripts every time you want to run the client if you are doing it locally. They are intented to be used in Virtual Machines with time limit.
