@@ -1,11 +1,16 @@
 #!/bin/bash -i
 
-# Args
+# Set args
 THREADS="$1"
 SERVER="$2"
 USERNAME="$3"
 PASSWORD="$4"
 REPO="$5"
+
+# Print args
+echo Threads used : $THREADS
+echo Target server: \"$SERVER\"
+echo Target repo  : \"$REPO\"
 
 # Update and install dependencies
 sudo apt update -y && sudo apt upgrade -y
